@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        white_main:"#e9e8ed",
+        white_second:"#ffffff",
+        black_main:"#1a1519",
+        brown_main:"#a3907b",
+        brown_second:"#968274",
+        blue_main:"#6e88ab",
+        grey_main:"#a39ca6",
+        grey_second:"#535053"
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +25,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 export default config
